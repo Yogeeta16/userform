@@ -1,0 +1,63 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+label{
+    font-size: 12px;
+    color: gray;
+}
+
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+
+/* select part  */
+
+select {
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  /* The following styles hide the default dropdown arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='%23828a8c' d='M12.345.27a.757.757 0 00-.672.032L8 3.42 4.327.302A.75.75 0 003.305.238a.768.768 0 00-.506.625v12.269c0 .234.107.455.288.601a.74.74 0 00.808.05L8 12.394l3.575 3.394a.747.747 0 00.808.051.75.75 0 00.288-.6V.862a.768.768 0 00-.506-.625z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 0.5em top 50%, 0 0;
+    background-size: 1.5em auto, 100%;
+  }
+  
